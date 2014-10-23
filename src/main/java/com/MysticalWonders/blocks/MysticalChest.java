@@ -12,6 +12,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -35,6 +36,7 @@ public class MysticalChest extends BlockChest{
 		super(p_i45397_1_);
 		
 		this.setCreativeTab(MysticalWondersMain.MysticalWondersTab);
+	
 		
 	}
 

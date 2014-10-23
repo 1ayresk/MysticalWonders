@@ -48,9 +48,7 @@ public class Table extends BlockContainer{
 		
 		return new TileEntityTable();
 	}
-	@SideOnly(Side.CLIENT)
-	public void registerBlockIcon(IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(MysticalWondersMain.modid + ":" + this.getUnlocalizedName().substring(5));
-	}
+
+
 
 }

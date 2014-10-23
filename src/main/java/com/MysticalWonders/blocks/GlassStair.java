@@ -43,6 +43,10 @@ public class GlassStair extends BlockContainer{
    {
        return false;
    }
+	@SideOnly(Side.CLIENT)
+	public void registerBlockIcon(IIconRegister iconRegister) {
+		this.blockIcon = iconRegister.registerIcon(MysticalWondersMain.modid + ":" + this.getUnlocalizedName().substring(5));
+	}
 
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {

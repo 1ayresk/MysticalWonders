@@ -25,8 +25,8 @@ import com.MysticalWonders.tile_entity.TileEntityMysticalChest;
 @SideOnly(Side.CLIENT)
 public class MysticalChestRenderer extends TileEntitySpecialRenderer
 {
-    private static final ResourceLocation field_147505_d = new ResourceLocation(MysticalWondersMain.modid + ":MysticalWonders/textures/Blocks/LargeMysticalChest.png");
-    private static final ResourceLocation field_147504_g = new ResourceLocation(MysticalWondersMain.modid + ":MysticalWonders/textures/Blocks/MysticalChest.png");
+    private static final ResourceLocation field_147505_d = new ResourceLocation(MysticalWondersMain.modid + ":" +  "textures/model/LargeMysticalChest.png");
+    private static final ResourceLocation field_147504_g = new ResourceLocation(MysticalWondersMain.modid + ":" + "textures/model/MysticalChest.png");
     private ModelChest field_147510_h = new ModelChest();
     private ModelChest field_147511_i = new ModelLargeChest();
     private boolean field_147509_j;

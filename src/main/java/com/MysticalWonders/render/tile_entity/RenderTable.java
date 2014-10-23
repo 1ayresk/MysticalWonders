@@ -12,7 +12,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderTable extends TileEntitySpecialRenderer{
 
-	private static final ResourceLocation texture = new ResourceLocation(MysticalWondersMain.modid + ":" + "textures/model/MysticalTable.png");
+	private static final ResourceLocation texture = new ResourceLocation(MysticalWondersMain.modid + ":" + "textures/model/Table.png");
 	
 	private ModelTable model;
 	

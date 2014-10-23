@@ -16,17 +16,12 @@ public class ItemRenderGlassStair implements IItemRenderer{
 	TileEntitySpecialRenderer render;
 	private TileEntity entity;
 	
+	public ItemRenderGlassStair(TileEntitySpecialRenderer render3, TileEntityMysticalChair tileEntityMysticalChair) {
+		this.entity =tileEntityMysticalChair;
+		this.render = render3;
+		
+	}
 	
-	public ItemRenderGlassStair() {
-		this.entity = entity;
-		this.render = render;
-		
-	}
-
-	public ItemRenderGlassStair(TileEntitySpecialRenderer render2,
-			TileEntityMysticalChair tileEntityMysticalChair) {
-		
-	}
 
 	@Override
 	public boolean handleRenderType(ItemStack item, ItemRenderType type) {

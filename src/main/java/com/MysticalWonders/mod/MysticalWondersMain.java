@@ -85,26 +85,7 @@ public static Item LiquidVoid;
     @EventHandler
     public void PreInit(FMLPreInitializationEvent preEvent) {
     	
-    	//Mystical Chest
-    	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMysticalChest.class, new MysticalChestRenderer());
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.MysticalChest), new ItemRenderMysticalChest());
-		
-		//MysticalChair
-		TileEntitySpecialRenderer render = new RenderMysticalChair();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMysticalChair.class, render);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.MysticalChair), new ItemRenderMysticalChair(render, new TileEntityMysticalChair()));
-		
-		//Glass Stair
-		TileEntitySpecialRenderer render1 = new RenderGlassStair();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGlassStair.class, render1);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.GlassStair), new com.MysticalWonders.render.tile_entity.ItemRenderGlassStair(render, new TileEntityMysticalChair()));
-    	
-		//Table
-		TileEntitySpecialRenderer render2 = new RenderTable();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTable.class, render2);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.Table), new com.MysticalWonders.render.tile_entity.ItemRenderTable(render, new TileEntityTable()));
-		
-    	//Creative Tabs
+    	  	//Creative Tabs
     	MysticalWondersTab = new CreativeTabs("MysticalWonders"){ 
     		@SideOnly(Side.CLIENT)
     		public Item getTabIconItem(){
@@ -151,7 +132,26 @@ public static Item LiquidVoid;
     	
     	//Mystical Water
     	
-     
+    	//Mystical Chest
+    	ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMysticalChest.class, new MysticalChestRenderer());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.MysticalChest), new ItemRenderMysticalChest());
+		
+		//MysticalChair
+		TileEntitySpecialRenderer render = new RenderMysticalChair();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMysticalChair.class, render);
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.MysticalChair), new ItemRenderMysticalChair(render, new TileEntityMysticalChair()));
+		
+		//Glass Stair
+		TileEntitySpecialRenderer render3 = new RenderGlassStair();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGlassStair.class, render3);
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.GlassStair), new com.MysticalWonders.render.tile_entity.ItemRenderGlassStair(render3, new TileEntityMysticalChair()));
+    	
+		//Table
+		TileEntitySpecialRenderer render2 = new RenderTable();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTable.class, render2);
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.Table), new com.MysticalWonders.render.tile_entity.ItemRenderTable(render2, new TileEntityTable()));
+		
+  
  
     }
 
