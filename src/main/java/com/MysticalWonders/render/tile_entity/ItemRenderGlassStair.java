@@ -2,6 +2,8 @@ package com.MysticalWonders.render.tile_entity;
 
 import org.lwjgl.opengl.GL11;
 
+import com.MysticalWonders.tile_entity.TileEntityMysticalChair;
+
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -18,6 +20,11 @@ public class ItemRenderGlassStair implements IItemRenderer{
 	public ItemRenderGlassStair() {
 		this.entity = entity;
 		this.render = render;
+		
+	}
+
+	public ItemRenderGlassStair(TileEntitySpecialRenderer render2,
+			TileEntityMysticalChair tileEntityMysticalChair) {
 		
 	}
 

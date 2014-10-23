@@ -97,12 +97,12 @@ public static Item LiquidVoid;
 		//Glass Stair
 		TileEntitySpecialRenderer render1 = new RenderGlassStair();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityGlassStair.class, render1);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.GlassStair), new com.MysticalWonders.render.tile_entity.ItemRenderGlassStair());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.GlassStair), new com.MysticalWonders.render.tile_entity.ItemRenderGlassStair(render, new TileEntityMysticalChair()));
     	
 		//Table
 		TileEntitySpecialRenderer render2 = new RenderTable();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityTable.class, render2);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.Table), new com.MysticalWonders.render.tile_entity.ItemRenderTable());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MysticalWondersMain.Table), new com.MysticalWonders.render.tile_entity.ItemRenderTable(render, new TileEntityTable()));
 		
     	//Creative Tabs
     	MysticalWondersTab = new CreativeTabs("MysticalWonders"){ 

@@ -2,6 +2,8 @@ package com.MysticalWonders.render.tile_entity;
 
 import org.lwjgl.opengl.GL11;
 
+import com.MysticalWonders.tile_entity.TileEntityTable;
+
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -15,11 +17,12 @@ public class ItemRenderTable implements IItemRenderer{
 	private TileEntity entity;
 	
 	
-	public ItemRenderTable() {
+	public ItemRenderTable(TileEntitySpecialRenderer render2, TileEntityTable tileEntityTable) {
 		this.entity = entity;
 		this.render = render;
 		
 	}
+		
 
 	@Override
 	public boolean handleRenderType(ItemStack item, ItemRenderType type) {
